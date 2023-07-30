@@ -1,7 +1,7 @@
- 
+--МТК ЧАЭС
 require("component").gpu.setResolution(120,60)
 local c = require("component")
-local rsio = c.proxy("8ab1384e-a8a3-448c-9db5-7ea28d560e17")
+local rsio = c.proxy("8ab1384e-a8a3-448c-9db5-7ea28d560e17") --Дебаг рсио
 forms=require("forms")
 forms.ignoreAll()
 
@@ -16,6 +16,7 @@ Form1.border=1
 exit=Form1:addButton(116,59,"Выход")
 exit.W=2
 
+--Режимы МТК
 Label1=Form1:addLabel(20,3,"Tгаз")
 Label1.W=4
 
@@ -41,6 +42,7 @@ Label6.fontColor=0
 Label7=Form1:addLabel(4,59,"00-00(ТК)")
 Label7.W=9
 
+--Параметры реактора
 Label8=Form1:addLabel(16,59,"Тгаз=000")
 Label8.W=8
 
@@ -58,6 +60,7 @@ Frame2.color=5197647
 Frame2.H=3
 Frame2.W=40
 
+--Вывод реального времени
 Label12=Form1:addLabel(110,3,"time")
 Label12.W=4
 Label12.fontColor=65535
